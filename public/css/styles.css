@@ -1,29 +1,73 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Syne&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: #2F8F9D;
   color: #fff;
+  position: relative;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
 }
+
 a{
   text-decoration: none;
 }
 
+.card{
+  width: 500px;
+  margin: auto;
+}
+.card h1{
+  color: #2F8F9D;
+  font-size: 1.5rem;
+}
+.card-header{
+  display: flex;
+  justify-content: baseline;
+}
 
 /* Navbar */
 .navbar a{
   color: #fff;
   font-weight: 500;
 }
+.navbar a:hover{
+  color: #B3E8E5;
+}
+.nav-item{
+  margin: 0 15px;
+}
+.navbar-toggler{
+  border: 2px solid #FFF;
+}
+nav .icon{
+  color: #fff;
+}
+nav .nav-brand{
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+nav .brand-lw{
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #2F8F9D;
+  margin-left:5px;
+  padding: 2px;
+  border-radius: 3px;
+}
 
 /* Footer  */
 .footer{
-  position: absolute;
-  bottom: 0;
+  margin-top: 100px;
 }
 
 
 /* Home Section  */
 .home-section{
-  height: 100vh;
   text-align: center;
   margin-top: 150px;
 }
@@ -34,9 +78,35 @@ a{
 .home-section .buttons{
   display: flex;
   justify-content: space-around;
+  margin-top: 100px;
 }
 .home-section .btn{
   width: 200px;
   background: transparent;
   border: 2px solid #FFF;
+}
+.home-section .btn:hover{
+  background: #B3E8E5;
+  color: #2F8F9D;
+}
+
+/* Register  */
+.register-section h1{
+  padding:20px 0;
+}
+.register-section .btn{
+  width: 150px;
+  background: #B3E8E5;
+  border: 2px solid #2F8F9D;
+  color: #2F8F9D;
+}
+/* Login  */
+.login-section h1{
+  padding:20px 0;
+}
+.login-section .btn{
+  width: 150px;
+  background: #B3E8E5;
+  border: 2px solid #2F8F9D;
+  color: #2F8F9D;
 }
