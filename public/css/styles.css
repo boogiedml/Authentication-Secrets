@@ -1,16 +1,42 @@
 
 body {
-  background-color: #E8ECEF;
-}
-
-.centered {
-    padding-top: 200px;
-    text-align: center;
-}
-
-.secret-text {
-  text-align: center;
-  font-size: 2rem;
+  background-color: #2F8F9D;
   color: #fff;
-  background-color: #000;
+}
+a{
+  text-decoration: none;
+}
+
+
+/* Navbar */
+.navbar a{
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Footer  */
+.footer{
+  position: absolute;
+  bottom: 0;
+}
+
+
+/* Home Section  */
+.home-section{
+  height: 100vh;
+  text-align: center;
+  margin-top: 150px;
+}
+.home-section h1,
+.home-section p{
+  margin-bottom: 20px;
+}
+.home-section .buttons{
+  display: flex;
+  justify-content: space-around;
+}
+.home-section .btn{
+  width: 200px;
+  background: transparent;
+  border: 2px solid #FFF;
 }
