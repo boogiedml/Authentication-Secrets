@@ -18,7 +18,8 @@ a{
 
 .card{
   width: 500px;
-  margin: auto;
+  margin: 60px auto 0;
+  position: relative;
 }
 .card h1{
   color: #2F8F9D;
@@ -29,6 +30,10 @@ a{
   justify-content: baseline;
 }
 
+.btn,
+:hover{
+  transition: .8s;
+}
 /* Navbar */
 .navbar a{
   color: #fff;
@@ -37,11 +42,15 @@ a{
 .navbar a:hover{
   color: #B3E8E5;
 }
+
 .nav-item{
   margin: 0 15px;
 }
 .navbar-toggler{
   border: 2px solid #FFF;
+}
+.navbar-toggler:hover{
+  background-color: #B3E8E5;
 }
 nav .icon{
   color: #fff;
@@ -59,7 +68,9 @@ nav .brand-lw{
   padding: 2px;
   border-radius: 3px;
 }
-
+nav .brand-lw:hover{
+  background-color: #B3E8E5
+}
 /* Footer  */
 .footer{
   margin-top: 100px;
@@ -90,23 +101,48 @@ nav .brand-lw{
   color: #2F8F9D;
 }
 
-/* Register  */
-.register-section h1{
-  padding:20px 0;
-}
-.register-section .btn{
-  width: 150px;
-  background: #B3E8E5;
-  border: 2px solid #2F8F9D;
-  color: #2F8F9D;
-}
-/* Login  */
+/* Register  and LOgin*/
+.register-section h1,
 .login-section h1{
   padding:20px 0;
 }
+
+.register-section .btn,
 .login-section .btn{
   width: 150px;
   background: #B3E8E5;
   border: 2px solid #2F8F9D;
   color: #2F8F9D;
+  margin-top: 20px;
 }
+
+.register-section .btn:hover,
+.login-section .btn:hover{
+  background: #2F8F9D;
+  border: 2px solid #B3E8E5;
+  color: #FFF;
+}
+
+/* Mediaa Queries */
+@media(max-width: 600px){
+  .card{
+    width: 400px;
+  }
+}
+
+@media(max-width: 500px){
+
+  .home-section .btn{
+    width: 150px;
+  }
+  .card{
+    width: 90%;
+  }
+
+  .register-section .btn,
+  .login-section .btn{
+    width: 100px;
+  }
+}
+
+

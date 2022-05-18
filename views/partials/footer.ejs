@@ -2,6 +2,27 @@
         <p>&copy; <a href="https://twitter.com/boogiedml" class="text-white">boogiedml</a> 2022</p>
     </footer>
 
+    
+    <script>
+        function clickFunction() {
+        const btn = document.getElementById("navbar-toggler");
+    
+        // btn.innerHTML = '<i class=" icon fa-solid fa-toggle-on"></i>'
+        if (btn.innerHTML === '<i class="icon fa-solid fa-toggle-off"></i>') {
+            btn.innerHTML = '<i class=" icon fa-solid fa-toggle-on"></i>';
+        } else if (btn.innerHTML === '<i class="icon fa-solid fa-toggle-on"></i>') {
+            btn.innerHTML = '<i class=" icon fa-solid fa-toggle-off"></i>';
+        } else {
+            btn.innerHTML = '<i class="icon fa-solid fa-toggle-on"></i>';
+        }
+    }
+    </script>
+<!-- <script>
+    const btn = document.getElementById("navbar-toggler");
+    btn.addEventListener("click", () => {
+        btn.innerHTML = '<i class=" icon fa-solid fa-toggle-on"></i>'
+    })
+</script> -->
 <!-- Font Awesome -->
 <script src="https://kit.fontawesome.com/953852d2bd.js" crossorigin="anonymous"></script>
 <!-- Bootstrap JS CDN  -->
