@@ -1,11 +1,7 @@
-//jshint esversion:6
 const express =  require("express");
 require("dotenv").config(); 
-const ejs = require("ejs");
-const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
 const User = require("./models/user");
-// const md5 = require('md5');
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
 
@@ -16,14 +12,13 @@ const app = express();
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 
 
-const dbURI = "mongodb+srv://secret:secret9019@secretcluster.mpize.mongodb.net/secretDB";
-mongoose.connect(dbURI)
-.then((result) => app.listen(8000, console.log("db Connected")))
-.catch((err) => console.log(err));
+mongoose.connect(process.env.dbURI)
+.then(result => app.listen(process.env.PORT, console.log("Database Connected")))
+.catch(err => console.log(err));
 
 
 
